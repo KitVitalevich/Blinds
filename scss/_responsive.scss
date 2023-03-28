@@ -1,0 +1,609 @@
+//Адаптив
+@media (max-width: 1399px) {
+  //Футер
+  .footer-btn {
+    padding: 15px 20px;
+    font-size: 17px;
+  }
+}
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+@media (max-width: 1270px) {
+  //Виды жалюзи
+  .goods {
+    &-list {
+      justify-content: center;
+      flex-wrap: wrap;
+      &__item {
+        flex: 0 1 50%;
+        .goods-btn__item {
+          width: 100%;
+          .goods-btn {
+            max-width: 140px;
+          }
+        }
+      }
+    }
+  }
+}
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+@media (max-width: 1199px) {
+  //Блок с акцией
+  .sale-block__prize {
+    display: flex;
+    align-items: center;
+  }
+  .sale-block__delivery-btn {
+    display: flex;
+    flex-direction: column;
+    .input {
+      margin-top: 20px;
+    }
+    .sale-btn {
+      margin-top: 20px;
+    }
+  }
+  .scrollup {
+    right: 25px;
+  }
+}
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+@media (max-width: 991px) {
+  //Шапка сайта
+  .main {
+    &-head {
+      display: flex;
+      .link {
+        line-height: 1.2;
+        &-smartphone {
+          width: 12px;
+        }
+        a {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+  //Меню
+  .menu-nav {
+    display: flex;
+    justify-content: center;
+  }
+  .link {
+    display: block;
+  }
+  .link-mobail {
+    display: none;
+  }
+  //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+  
+  //Блок с акцией
+  .sale-block__prize {
+    display: none;
+  }
+  .sale .sale-block__delivery {
+    h3 {
+      margin-top: 30px;
+    }
+  }
+  //Отзывы
+  .review-bigslider {
+    flex-direction: column;
+  }
+  .review-slider__slider {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+}
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+@media (max-width: 879px) {
+  //Попап, Виды жалюзей
+  .block-info__slider {
+    h3 {
+      font-size: 22px;
+    }
+  }
+  .details-btn {
+    font-size: 16px;
+    padding: 10px 5px;
+  }
+  .block-media {
+    margin: 60px 0px 0px 25px;
+    p {
+      font-size: 16px;
+    }
+  }
+  .details-block {
+    padding: 30px;
+  }
+  .details-blocks__form {
+    margin: 60px 0px 0px 0px;
+  }
+}
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+@media (max-width: 767px) {
+  //Меню
+  .main {
+    margin: 15px 0px;
+  }
+  .menu-mobail {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    transform: translateX(100%);
+    z-index: 99;
+    &__close {
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 25px;
+      font-size: 50px;
+      color: $color-btn;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    &_active {
+      transform: translateX(0%);
+    }
+  }
+  .menu-nav {
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      a {
+        font-size: 20px;
+      }
+    }
+  }
+  .nav-burger {
+    display: flex;
+  }
+  .link-mobail {
+    display: block;
+    text-align: center;
+    line-height: 1.3;
+    a {
+      color: $color-footer;
+      text-decoration: none;
+      font-size: 25px;
+      font-weight: 500;
+      display: inline-block;
+      &:hover {
+        color: $color-footer;
+        text-decoration: underline;
+      }
+      &:active {
+        text-decoration: none;
+      }
+    }
+    span {
+      display: block;
+      font-size: 15px;
+      sup {
+        font-size: 9px;
+      }
+    }
+  }
+  .link {
+    display: none;
+  }
+  .title {
+    position: relative;
+  }
+  //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+  
+  //Главный экран
+  .title-list {
+    &__title {
+      h1 {
+        font-size: 30px;
+        margin: 80px 0px 60px 0px;
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+  //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+  //Футер
+  .footer-head {
+    flex-direction: column;
+    justify-content: center;
+    &__map {
+      width: 100%;
+      height: 260px;
+    }
+  }
+  .footer-head__contacts {
+    justify-content: center;
+    margin: 0;
+    h3 {
+      margin-top: 40px;
+      margin-bottom: 30px;
+    }
+  }
+  .footer-head__icon {
+    margin-top: 30px;
+  }
+  .footer-low {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-low__company {
+    text-align: center;
+    margin-bottom: 30px;
+    p {
+      margin-bottom: 10px;
+    }
+  }
+  .footer-low__policy {
+    text-align: center;
+    margin-bottom: 30px;
+    a {
+      margin-bottom: 10px;
+    }
+  }
+  .footer-low__frontend {
+    text-align: center;
+  }
+
+  //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+  //Попап, Вызов замерщика
+  .popup-call__content {
+    form {
+      padding: 20px;
+      h3 {
+        font-size: 23px;
+        margin: 0px 0px 30px 0px;
+      }
+    }
+    .call-btn {
+      padding: 16px 20px;
+    }
+  }
+  //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+  //Попап, Виды жалюзей
+  .block-info {
+    flex-direction: column;
+  }
+  .block-info__slider {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .block-media {
+    margin: 60px 0px 0px 0px;
+  }
+  .block-media__price {
+    position: relative;
+    margin-top: 10px;
+  }
+  .details-block {
+    padding: 20px;
+  }
+  .details-blocks__form {
+    margin: 30px 0px 0px 0px;
+    form {
+      input {
+        font-size: 16px;
+        padding: 16px 10px 16px 20px;
+        &::placeholder {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .details-btn {
+    font-size: 16px;
+  }
+  .block-info__slider {
+    h3 {
+      font-size: 23px;
+      margin: 0px 0px 25px 0px;
+    }
+  }
+  .popup-details {
+    &__content {
+      top: 2%;
+    }
+  }
+  //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+  //Попап, Задать вопрос
+  .popup-query__content {
+    form {
+      padding: 20px;
+      h3 {
+        font-size: 23px;
+        margin: 0px 0px 30px 0px;
+      }
+    }
+  }
+  //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+}
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+@media (max-width: 659px) {
+  .details-blocks__form {
+    margin: 15px 0px 0px 0px;
+    form {
+      flex-direction: column;
+      input {
+        margin-bottom: 10px;
+        font-size: 16px;
+        padding: 10px 10px 10px 20px;
+        &::placeholder {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+@media (max-width: 575px) {
+  //Шапка сайта
+  .main-head {
+    display: flex;
+    justify-content: center;
+  }
+  .title {
+    display: flex;
+    justify-content: flex-start;
+    left: 0;
+    transform: translateX(0);
+    h3 {
+      font-size: 18px;
+      span {
+        font-size: 16px;
+      }
+    }
+  }
+  .burger-block {
+    display: block;
+    width: 45px;
+  }
+  .nav-burger {
+    display: flex;
+  }
+  //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+  //Меню 
+  .menu-mobail {
+    &__close {
+      top: 15px;
+    }
+  }
+  //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+  //Главный экран
+  .title-list {
+    &__title {
+      h1 {
+        margin: 65px 0px 40px 0px;
+        font-size: 25px;
+        line-height: 1.2;
+        span {
+          padding: 0 3px;
+        }
+      }
+    }
+    &__subtitle {
+      margin: 0;
+      h3 {
+        font-size: 20px;
+        span {
+          background-color: $color-green;
+          color: $color-light;
+        }
+      }
+    }
+    &__button {
+      display: inline-block;
+      margin: 0px 0px 30px;
+      .title__button {
+        text-align: center;
+        width: 100%;
+      }
+      .header-btn {
+        margin: 5px 0;
+        width: 100%;
+      }
+    }
+  }
+  //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+  
+  //Виды жалюзи
+  .goods .goods {
+    &-title {
+      margin: 30px 30px 20px 30px;
+      font-size: 30px;
+    }
+  }
+  .goods .goods-advice {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px 0;
+    &__title {
+      order: 2;
+      .advice-btn {
+        margin: auto;
+        font-size: 19px;
+        margin-top: 20px;
+      }
+    }
+    &__img {
+      order: 1;
+      margin-bottom: 40px;
+    }
+  }
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+//Слайдер
+.slick .slider .slick-arrow {
+  width: 12px;
+  height: 25px;
+}
+.slick .slider .slick-arrow.slick-prev {
+  left: 20px;
+}
+.slick .slider .slick-arrow.slick-next {
+  right: 20px;
+}
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+//Блок с акцией
+.sale-block {
+  margin: 10px 0px;
+}
+.sale .sale-block__delivery {
+  h3 {
+    font-size: 28px;
+  }
+  span {
+    line-height: 1.5;
+  }
+}
+.sale {
+  margin: 50px 0px 40px 0px;
+}
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+//Отзывы
+.review .review-title {
+  margin: 30px 0px 30px 0px;
+}
+.review .review-bigslider .review-slider__slider {
+  width: 100%;
+  padding: 0;
+}
+.review .review-slider .media  {
+  padding: 20px;
+}
+.review-slider {
+  margin: 0px 0px 20px 0px;
+}
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+//Футер
+.footer-head {
+  margin: 40px 0px;
+}
+.footer-btn {
+  margin: 0px 15px 0px 0px;
+  padding: 15px 12px;
+}
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+//Скролл вверх
+.scrollup {
+  right: 0;
+  left: 15px;
+  bottom: 20px;
+}
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+//Попап, Вызов замерщика
+.popup-call__content {
+  width: 95%;
+  form {
+    width: 100%;
+    padding: 20px 10px;
+    max-width: 100%;
+  }
+}
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+//Попап, Виды жалюзей
+  .block-media {
+    margin: 40px 0px 0px 0px;
+  }
+  .block-media__price {
+    position: relative;
+    margin-top: 0px;
+    .text {
+      font-size: 16px;
+    }
+    .text-big {
+      font-size: 22px;
+      font-weight: $bold;
+    }
+    .text-bold {
+      font-size: 16px;
+      font-weight: $bold;
+    }
+  }
+  .block-media__text {
+    p {
+      font-size: 14px;
+      margin: 0px 0px 5px 0px;
+    }
+  }
+  .details-block {
+    padding: 10px;
+  }
+  .details-btn {
+    font-size: 16px;
+    padding: 10px 0px;
+  }
+  .block-info__slider {
+    h3 {
+      font-size: 18px;
+      margin: 0px 0px 16px 0px;
+    }
+  }
+  .popup-details .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+  }
+  .popup-details .swiper-pagination {
+    bottom: -30px;
+  }
+  //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+  //Попап, Задать вопрос
+  .popup-query__content {
+    width: 95%;
+    form {
+      width: 100%;
+      padding: 20px 10px;
+      max-width: 100%;
+    }
+  }
+  //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+}
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+@media (max-width:410px) {
+  //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+  
+//Попап, вызов замерщика
+.popup-call__content {
+  width: 95%;
+  form {
+    padding: 20px 10px;
+  }
+}
+}
